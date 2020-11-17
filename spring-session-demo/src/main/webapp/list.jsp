@@ -7,7 +7,7 @@
     <%
         pageContext.setAttribute("APP_PATH", request.getContextPath());
     %>
-    <link href="/resources/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/resources/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <h2>我是服务器：${pageContext.request.localPort}</h2>
@@ -135,8 +135,8 @@
 </div>
 
 
-<script src="resources/jquery-3.4.1.min.js"></script>
-<script src="resources/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/jquery-3.4.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/bootstrap.min.js"></script>
 <script type="text/javascript" src="${APP_PATH}/resources/list.js" charset="utf-8"></script>
 <%--<script type="text/javascript"></script>--%>
 </body>
